@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/rules-of-hooks */
 import { Layout } from '@/components/layouts'
 import { FavoritePokemon } from '@/components/pokemons';
 import { NoFavorites } from '@/components/ui';

@@ -1,4 +1,4 @@
-import { FC } from "react"
+import { FC, ReactNode, ReactChild, ReactChildren } from "react"
 import Head from "next/head"
 import { Navbar } from '../ui';
 
