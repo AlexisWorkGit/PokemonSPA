@@ -32,7 +32,7 @@ const PokemonName:FC<Props> = ({pokemon}) => {
     // <>
     //     <Pokemonpage pokemon={pokemon} />
     // </>
-    <Layout transform='capitalize' title='Algun poke'>
+    <Layout title={pokemon.name}>
         <Text h1 transform='capitalize' css={{padding :'30px'}}>{pokemon.name}</Text>
         <Grid.Container css={{marginTop: '5px'}} gap={2} key={pokemon.id}>
               <Grid xs={12} sm={4}>

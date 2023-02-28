@@ -4,16 +4,16 @@ import { Navbar } from '../ui';
 
 interface LayoutProps {
   title?: string;
-  pokemon: string;
+  children: ReactNode;
 }
 
-export const Layout: FC<LayoutProps> = ({children, title, pokemon}) => {
+export const Layout: FC<LayoutProps> = ({children, title}) => {
   return (
     <>
         <Head> 
             <title>{ title || 'PokemonApp'}</title>
             <meta name="author" content="Alexis Villegas"></meta>
-            <meta name="description" content={`Informacion del ${pokemon}`}></meta>
+            <meta name="description" content={`Informacion del Pokemon`}></meta>
             <meta name="keywords" content={`${title}, pokemon, pokedex`}></meta>  </Head>
 
         <Navbar />

@@ -6,6 +6,8 @@ import { Layout } from '../components/layouts/index';
 import { pokeApi } from '@/api';
 import { PokemonListResponse, SmallPokemon } from '@/interfaces';
 import { PokemonRender } from '@/components/pokemons';
+import { Pokemon } from '@/interfaces';
+import PokemonName from './name/[name]';
 
 interface Props{
   pokemons: SmallPokemon[];
@@ -15,8 +17,7 @@ const HomePage: NextPage<Props> = ({pokemons}) =>  {
   
  
   return (
-    <>
-      <Layout title='Pokemon List' pokemon='Quilava' />
+      <Layout title={'Algun Pokemon'}>
       <Grid.Container gap={2} justify='flex-start'>
         {
           pokemons.map(({id, name, img})=>(
@@ -24,7 +25,7 @@ const HomePage: NextPage<Props> = ({pokemons}) =>  {
           ))
         }
       </Grid.Container>
-    </>
+    </Layout>
   )
 }
 export const getStaticProps: GetStaticProps = async (ctx) => {
